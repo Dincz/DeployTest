@@ -1,0 +1,154 @@
+.mainrow .col:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.mainrow .col:hover p {
+    color: #CC0008;
+}
+
+.mainrow .first:hover .ulCont {
+    display: block;
+    transition: all .5s;
+    text-align: left;
+}
+
+.mainrow .col p {
+    font-size: 12px;
+    padding-bottom: 5px !important;
+}
+
+
+.ulCont {
+    height: 40vh;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 999;
+    /* left: 0 !important; */
+    /* top: 100% !important; */
+    background-color: white;
+    display: none;
+    text-align: left;
+
+}
+
+.ulCont .dropHeading {
+    color: var(--primary-color) !important;
+    font-size: 11px;
+    border-bottom: 1px solid #CC0008;
+    position: sticky;
+    top: -8%;
+    background-color: white;
+    height: 5vh;
+    font-size: 12px !important;
+}
+
+.ulCont p {
+    color: black !important;
+
+}
+
+.barImgCont {
+    position: sticky;
+    top: 9%;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 20px;
+}
+
+.barImgCont img {
+    height: 100%;
+    width: 100%;
+}
+
+.second {
+    position: relative;
+}
+
+.Stool .SecondDrop {
+    right: -20%!important;
+    top: 100% !important;
+    width: max-content !important;
+    padding: 5% !important;
+    position: absolute;
+}
+.mainrow .Stool:hover .SecondDrop {
+    display: block !important;
+}
+
+.Table .SecondDrop {
+    right:-20%!important;
+    top: 100% !important;
+    width: max-content !important;
+    padding: 5% !important;
+    position: absolute;
+}
+.mainrow .Table:hover .SecondDrop {
+    display: block !important;
+}
+
+.Box .SecondDrop {
+    right:-20% !important;
+    top: 100% !important;
+    width: max-content !important;
+    padding: 5% !important;
+    position: absolute;
+}
+.mainrow .Box:hover .SecondDrop {
+    display: block !important;
+}
+.Drawer .SecondDrop {
+    right:-20%!important;
+    top: 100% !important;
+    width: max-content !important;
+    padding: 5% !important;
+    position: absolute;
+}
+.mainrow .Drawer:hover .SecondDrop {
+    display: block !important;
+}
+
+
+.second .SecondDrop {
+    left: -25% !important;
+    top: 100% !important;
+    width: max-content !important;
+    padding: 5% !important;
+    position: absolute;
+}
+
+.mainrow .second:hover .SecondDrop {
+    display: block !important;
+}
+
+.innerUlCont {
+    display: none;
+    position: absolute;
+    /* top: 100%; */
+    /* left: 0; */
+}
+
+.drawerHover:hover .innerUlCont {
+    display: block;
+}
+
+.innerUlCont {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 999;
+}
+
+.drawerHover:hover .innerUlCont {
+    display: block;
+}
+@media (max-width:992px) {
+    .mainrow{
+        display: none !important;
+    }
+    
+}
