@@ -54,7 +54,6 @@ const ResetPasswordPage = () => {
       console.log("response: ");
       if (response.status === 200) {
         console.log("success from forgot-Passwords");
-        // localStorage.setItem("resetToken", resetToken);
         localStorage.setItem("resetEmail", formData.email);
       }
       console.log(response);

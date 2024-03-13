@@ -115,7 +115,7 @@ export const cartSlice = createSlice({
         // Update state with the new products array
         state.products = updatedProducts;
 
-        // Update localStorage
+        // Update lStorage
         localStorage.setItem("products", JSON.stringify(state.products));
       }
     },

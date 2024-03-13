@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import ProductsAccr from "../ProductsAccor/ProductsAccr";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+// import { useEffect } from "react";
 
 export default function Header() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,7 +20,9 @@ export default function Header() {
   // const [suggestions, setSuggestions] = useState([]);
   // console.log("suggestions are here ", suggestions)
   console.log("here is searched result", searchResults);
-
+  useEffect(() => {
+    alert("Finished loading");
+  }, []);
   // console.log("here is result ", searchResults)
   const isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
   const handleSearchChange = async (e) => {
